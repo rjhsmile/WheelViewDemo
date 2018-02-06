@@ -15,6 +15,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /**
+ * 资料：http://www.tuicool.com/articles/vANVVjA
  * 饶建辉 修改
  * 时间：2017年3月31日16:38:11
  */
