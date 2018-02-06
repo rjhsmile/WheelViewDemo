@@ -17,9 +17,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="取消"
             android:background="@null"
+            android:gravity="center"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
 
@@ -36,10 +35,10 @@
             android:id="@+id/btn"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:background="@null"
             android:gravity="center"
             android:onClick="onClick"
             android:text="确定"
-            android:background="@null"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
     </LinearLayout>

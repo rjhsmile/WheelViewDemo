@@ -15,13 +15,14 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /**
- * 饶建辉 修改
+ * 饶建辉
  * 时间：2017年3月31日16:38:11
  */
 public class MainActivity extends AppCompatActivity {
     public static TextView tv;
-    public static int num = 1;
-    private ArrayList<String> mDatas = new ArrayList<>();;
+    private ArrayList<String> mDatas = new ArrayList<>();
+    public String mText = "0";//解决用户未滑动数据显示
+    ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,18 +47,21 @@ public class MainActivity extends AppCompatActivity {
             mDatas.add("" + i);
         }
         pickerView.setData(mDatas);
-        pickerView.setSelected(num - 1);
+        mText = mDatas.get(0);
+        pickerView.setSelected(mText);
         pickerView.setOnSelectListener(new PickerView.onSelectListener() {
             @Override
             public void onSelect(String text) {
-               num = Integer.parseInt(text);
-                tv.setText(text);
+                mText = text;
+                tv.setText(mText);
             }
         });
+        //确定按钮
         Button btnOk = (Button) view.findViewById(R.id.btn);
         btnOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                tv.setText(mText);
                 loadingDialog.dismiss();
             }
         });
