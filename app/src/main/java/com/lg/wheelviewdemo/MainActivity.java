@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 /**
  * 资料：http://www.tuicool.com/articles/vANVVjA
- * 饶建辉 修改,提交
+ * 饶建辉 修改
  * 时间：2017年3月31日16:38:11
  */
 public class MainActivity extends AppCompatActivity {
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-        couponSuccessDialog();
+        //couponSuccessDialog();
     }
 
 
