@@ -43,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
         loadingDialog.setCancelable(true);// 不可以用“返回键”取消
         loadingDialog.setCanceledOnTouchOutside(false);
         PickerView pickerView = (PickerView) view.findViewById(R.id.pickerview);
+        mText = "";
+        mDatas.clear();
         for (int i = 1; i < 60; i++) {
             mDatas.add("" + i);
         }
